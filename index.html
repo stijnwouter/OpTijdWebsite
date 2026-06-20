@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Op Tijd. – Rust in je routines, op jouw manier</title>
+    <meta name="description" content="ADHD-vriendelijke routine-app die helpt om zonder stress structuur te brengen in je dag. Meerdere routines, flexibel schakelen, geen abonnement.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Op Tijd. – Rust in je routines">
+    <meta property="og:description" content="ADHD-vriendelijke routine-app die helpt om zonder stress structuur te brengen in je dag.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- Confetti Library for Demo -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="120" height="120" rx="25" fill="#f1c40f"/>
+                        <circle cx="60" cy="60" r="35" stroke="#4a4a4a" stroke-width="4" fill="none"/>
+                        <line x1="60" y1="60" x2="60" y2="35" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="60" y1="60" x2="75" y2="60" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    <span>Op Tijd.</span>
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Over Ons</a>
+                    <a href="#features">Features</a>
+                    <a href="#demo">Probeer Nu</a>
+                    <a href="#pricing">Prijzen</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#beta-test" class="nav-cta">🧪 Beta Testen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with App Screenshot -->
+    <section class="hero">
+        <div class="container-wide">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Nu beschikbaar voor beta-testing
+                    </div>
+                    
+                    <h1>Rust in je routines.<br><span class="accent-text">Op jouw manier.</span></h1>
+                    
+                    <p class="hero-description">
+                        Een ADHD-vriendelijke routine-app die je helpt om zonder stress structuur te brengen in je dag. Meerdere routines, flexibel schakelen, geen abonnement.
+                    </p>
+                    
+                    <div class="features-quick">
+                        <div class="quick-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Meerdere routines</span>
+                        </div>
+                        <div class="quick-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Visuele timer</span>
+                        </div>
+                        <div class="quick-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Geen abonnement</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-ctas">
+                        <a href="#beta-test" class="btn btn-primary">
+                            🧪 Test de app gratis
+                        </a>
+                        <a href="#demo" class="btn btn-secondary">
+                            Probeer de demo →
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="phone-showcase">
+                        <div class="phone-device">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <!-- Real App Screenshot -->
+                                <img src="assets/app-screenshot-1.png" alt="Op Tijd App Interface" style="width: 100%; height: 100%; object-fit: cover; border-radius: 42px;">
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="floating-element float-1">
+                            <div class="stat-card">
+                                <div class="stat-icon">✅</div>
+                                <div class="stat-text">
+                                    <div class="stat-label">Vandaag</div>
+                                    <div class="stat-value">5/5 ✓</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-element float-2">
+                            <div class="stat-card">
+                                <div class="stat-icon">⏱️</div>
+                                <div class="stat-text">
+                                    <div class="stat-label">Focus tijd</div>
+                                    <div class="stat-value">45 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section - NIEUW! -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Probeer het zelf</h2>
+                <p class="section-subtitle">Klik op de features om te zien hoe ze werken</p>
+            </div>
+            
+            <div class="demo-grid">
+                <!-- Mini Timer Demo -->
+                <div class="demo-card">
+                    <div class="demo-icon">⏱️</div>
+                    <h3>Live Timer</h3>
+                    <p>Start een taak en zie de timer in actie</p>
+                    
+                    <div class="mini-timer">
+                        <div class="mini-timer-display" id="demoTimer">05:00</div>
+                        <div class="mini-timer-task">Tanden poetsen</div>
+                        <div class="mini-progress-bar">
+                            <div class="mini-progress-fill" id="demoProgress"></div>
+                        </div>
+                        <button class="demo-btn" id="startTimerBtn" onclick="startDemoTimer()">
+                            ▶ Start
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quote Generator Demo -->
+                <div class="demo-card">
+                    <div class="demo-icon">💬</div>
+                    <h3>Motivatie Quotes</h3>
+                    <p>Krijg bemoedigende berichten tijdens je routine</p>
+                    
+                    <div class="quote-display" id="quoteDisplay">
+                        Klik op de knop voor een motiverende quote!
+                    </div>
+                    <button class="demo-btn" onclick="showRandomQuote()">
+                        ✨ Nieuwe Quote
+                    </button>
+                </div>
+                
+                <!-- Confetti Demo -->
+                <div class="demo-card">
+                    <div class="demo-icon">🎉</div>
+                    <h3>Confetti Viering</h3>
+                    <p>Vier je successen met een leuke animatie</p>
+                    
+                    <div class="confetti-preview">
+                        <div class="confetti-icon">🎊</div>
+                        <div class="confetti-text">Taak voltooid!</div>
+                    </div>
+                    <button class="demo-btn" onclick="triggerConfetti()">
+                        🎉 Laat zien!
+                    </button>
+                </div>
+                
+                <!-- Checklist Mode Demo -->
+                <div class="demo-card">
+                    <div class="demo-icon">✅</div>
+                    <h3>Checklist Modus</h3>
+                    <p>Gebruik zonder tijdsdruk, puur als checklist</p>
+                    
+                    <div class="checklist-demo">
+                        <div class="checklist-item" onclick="toggleCheckItem(this)">
+                            <span class="check-box">☐</span>
+                            <span>Bed opmaken</span>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheckItem(this)">
+                            <span class="check-box">☐</span>
+                            <span>Ontbijten</span>
+                        </div>
+                        <div class="checklist-item" onclick="toggleCheckItem(this)">
+                            <span class="check-box">☐</span>
+                            <span>Tanden poetsen</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sound Effect Demo -->
+                <div class="demo-card">
+                    <div class="demo-icon">🔔</div>
+                    <h3>Geluidseffecten</h3>
+                    <p>Positieve geluiden bij het afvinken van taken</p>
+                    
+                    <div class="sound-preview">
+                        <div class="sound-wave">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <button class="demo-btn" onclick="playDemoSound()">
+                        🔊 Beluister
+                    </button>
+                </div>
+                
+                <!-- Progress Tracking Demo -->
+                <div class="demo-card">
+                    <div class="demo-icon">📊</div>
+                    <h3>Voortgang Tracking</h3>
+                    <p>Zie direct je totale voortgang en eindtijd</p>
+                    
+                    <div class="progress-demo">
+                        <div class="progress-stats">
+                            <div>
+                                <span class="progress-label">Voltooid:</span>
+                                <span class="progress-value" id="demoCompleted">3/7</span>
+                            </div>
+                            <div>
+                                <span class="progress-label">Klaar om:</span>
+                                <span class="progress-value" id="demoEndTime">09:45</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-demo">
+                            <div class="progress-bar-fill" style="width: 43%"></div>
+                        </div>
+                        <div class="progress-percent">43%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real App Screenshots Gallery - NIEUW! -->
+    <section class="screenshots-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Zo ziet de app eruit</h2>
+                <p class="section-subtitle">Swipe door echte screenshots van de app</p>
+            </div>
+            
+            <div class="screenshots-slider">
+                <button class="slider-btn prev" onclick="slideScreenshots(-1)">‹</button>
+                <div class="screenshots-container" id="screenshotsContainer">
+                    <div class="screenshot-item active">
+                        <img src="assets/screenshot-routines.png" alt="Routines overzicht">
+                        <p>Overzicht van al je routines</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="assets/screenshot-timer.png" alt="Timer in actie">
+                        <p>Timer met visuele voortgang</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="assets/screenshot-settings.png" alt="Instellingen">
+                        <p>Alles aanpasbaar naar jouw wensen</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="assets/screenshot-stats.png" alt="Statistieken">
+                        <p>Inzicht in je voortgang</p>
+                    </div>
+                </div>
+                <button class="slider-btn next" onclick="slideScreenshots(1)">›</button>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- Beta Test CTA -->
+    <section class="beta-section" id="beta-test">
+        <div class="container">
+            <div class="beta-card">
+                <div class="beta-icon">🧪</div>
+                <h2>Word beta-tester</h2>
+                <p>Op Tijd. is nu beschikbaar voor beta-testing. Help ons de app te verbeteren en krijg gratis toegang tijdens de testfase.</p>
+                
+                <a href="https://testflight.apple.com/join/your-link" class="btn btn-beta" target="_blank" rel="noopener">
+                    Start met testen
+                </a>
+                
+                <p class="beta-note">
+                    Gratis tijdens de testfase • Je feedback helpt ons de app beter te maken
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>Niet elke dag is hetzelfde.</h2>
+            <p class="section-subtitle">Maar veel apps doen alsof dat wel zo is.</p>
+            
+            <div class="problem-intro">
+                <p>Met ADHD is het moeilijker om:</p>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Tijd inschatten</h3>
+                    <p>Realistisch bepalen hoeveel tijd taken kosten</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔄</div>
+                    <h3>Flexibel schakelen</h3>
+                    <p>Aanpassen wanneer iets anders beter voelt</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😌</div>
+                    <h3>Rustig blijven</h3>
+                    <p>Niet in paniek raken als plannen veranderen</p>
+                </div>
+            </div>
+            
+            <p class="problem-conclusion">Vaste schema's en betaalmuren helpen niet. Ze maken alles zwaarder.</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="features">
+        <div class="container-wide">
+            <div class="section-header">
+                <h2>Structuur die meebeweegt</h2>
+                <p class="section-subtitle">Flexibiliteit zonder chaos. Structuur zonder rigiditeit.</p>
+            </div>
+            
+            <div class="solution-grid">
+                <div class="solution-feature">
+                    <div class="feature-number">01</div>
+                    <h3>Meerdere routines</h3>
+                    <p>Maak verschillende routines voor verschillende momenten. Een doordeweekse ochtend, een weekenddag, een avondroutine – wat jij nodig hebt.</p>
+                    <ul class="feature-list">
+                        <li>Onbeperkt aantal routines</li>
+                        <li>Verschillende tijdsduur per routine</li>
+                        <li>Eigen namen en kleuren</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-feature">
+                    <div class="feature-number">02</div>
+                    <h3>Visuele timer</h3>
+                    <p>Zie direct hoeveel tijd je nog hebt en wanneer je klaar bent. Geen verrassingen, geen stress.</p>
+                    <ul class="feature-list">
+                        <li>Real-time countdown</li>
+                        <li>Visuele voortgangsbalk</li>
+                        <li>Eindtijd altijd zichtbaar</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-feature">
+                    <div class="feature-number">03</div>
+                    <h3>Jouw controle</h3>
+                    <p>De app helpt je focussen, maar jij houdt de controle. Geen verplichte notificaties, geen streaks die je onder druk zetten.</p>
+                    <ul class="feature-list">
+                        <li>Alles is optioneel</li>
+                        <li>Geen druk of schuldgevoel</li>
+                        <li>Jij beslist wat helpt</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization -->
+    <section class="customization">
+        <div class="container">
+            <div class="section-header">
+                <h2>Aanpasbaar aan jou</h2>
+                <p class="section-subtitle">Niet iedereen heeft hetzelfde nodig. Daarom kan je alles aan of uit zetten.</p>
+            </div>
+            
+            <div class="customization-grid">
+                <div class="toggle-card">
+                    <div class="toggle-header">
+                        <span class="toggle-title">Geluidsmeldingen</span>
+                        <div class="toggle-switch active"></div>
+                    </div>
+                    <p>Krijg een subtiel geluid als je te lang aan een taak blijft hangen</p>
+                </div>
+                
+                <div class="toggle-card">
+                    <div class="toggle-header">
+                        <span class="toggle-title">Confetti viering</span>
+                        <div class="toggle-switch"></div>
+                    </div>
+                    <p>Vier je successen met een leuke animatie bij het afronden</p>
+                </div>
+                
+                <div class="toggle-card">
+                    <div class="toggle-header">
+                        <span class="toggle-title">Motiverende quotes</span>
+                        <div class="toggle-switch"></div>
+                    </div>
+                    <p>Krijg bemoedigende berichten tijdens je routine</p>
+                </div>
+                
+                <div class="toggle-card">
+                    <div class="toggle-header">
+                        <span class="toggle-title">Checklistmodus</span>
+                        <div class="toggle-switch"></div>
+                    </div>
+                    <p>Gebruik de app zonder tijdsdruk, puur als checklist</p>
+                </div>
+            </div>
+            
+            <div class="customization-note">
+                <p>Gebruik alleen wat helpt. Laat de rest uit.</p>
+                <p class="note-emphasis">Geen verplichte functies. Nooit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story">
+        <div class="container-narrow">
+            <h2>Waarom Op Tijd. bestaat</h2>
+            
+            <div class="story-content">
+                <p>Mijn vriendin gebruikte een routine-app die hielp.</p>
+                
+                <p>Tot ze haar routines wilde aanpassen of extra routines wilde maken.</p>
+                
+                <div class="story-quote">
+                    <div class="quote-mark">"</div>
+                    <p>Dat zat achter een betaalmuur van €30 per jaar.</p>
+                </div>
+                
+                <p>Voor iets dat ze elke ochtend nodig had.</p>
+                
+                <p class="story-highlight">Ik ben Stijn, developer. Dus bouwde ik Op Tijd.</p>
+                
+                <p>Niet om te pushen. Maar om te helpen.</p>
+                
+                <div class="signature">
+                    <p>– Omdat mentale rust geen verdienmodel hoeft te zijn.</p>
+                </div>
+            </div>
+            
+            <div class="story-cta">
+                <a href="about.html" class="btn btn-secondary">Meer over ons verhaal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Geen abonnement</h2>
+                <p class="section-subtitle">Hulp hoort geen abonnement te zijn.</p>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="price-badge">Eenmalige betaling</div>
+                <div class="price">€3</div>
+                <div class="price-detail">Voor altijd van jou. Geen verrassingen.</div>
+                
+                <ul class="price-features">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#2ecc71" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Geen abonnement</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#2ecc71" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Geen premium lagen</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#2ecc71" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Geen upsells</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#2ecc71" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Alle functies inbegrepen</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10L9 12L13 8M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#2ecc71" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Alle toekomstige updates gratis</span>
+                    </li>
+                </ul>
+                
+                <p class="pricing-note">Rust mag simpel zijn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Klaar om te beginnen?</h2>
+                <p>Start vandaag nog met testen en ontdek hoe Op Tijd. jouw dag rustiger kan maken.</p>
+                <div class="cta-buttons">
+                    <a href="#beta-test" class="btn btn-primary btn-lg">🧪 Word beta-tester</a>
+                    <a href="contact.html" class="btn btn-secondary btn-lg">Stel een vraag</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="50" height="50" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="120" height="120" rx="25" fill="#f1c40f"/>
+                            <circle cx="60" cy="60" r="35" stroke="#4a4a4a" stroke-width="4" fill="none"/>
+                            <line x1="60" y1="60" x2="60" y2="35" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="60" y1="60" x2="75" y2="60" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Op Tijd.</h3>
+                    </div>
+                    <p>Structuur zonder rigiditeit.<br>Rust zonder druk.</p>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4>Navigatie</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Over Ons</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Prijzen</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#beta-test">Beta Testing</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:stijn.wouters@hotmail.com">Email</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Op Tijd. Gemaakt met ❤️ voor mensen die structuur zoeken zonder druk.</p>
+                <div class="footer-badges">
+                    <span class="badge">Made in Belgium 🇧🇪</span>
+                    <span class="badge">ADHD-friendly 🧠</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden Audio for Demo -->
+    <audio id="demoCheckSound" src="check.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

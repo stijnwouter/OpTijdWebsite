@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Op Tijd.</title>
+    <meta name="description" content="Neem contact op met Op Tijd. Vragen, feedback of gewoon hallo zeggen.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="120" height="120" rx="25" fill="#f1c40f"/>
+                        <circle cx="60" cy="60" r="35" stroke="#4a4a4a" stroke-width="4" fill="none"/>
+                        <line x1="60" y1="60" x2="60" y2="35" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="60" y1="60" x2="75" y2="60" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    <span>Op Tijd.</span>
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Over Ons</a>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#pricing">Prijzen</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="index.html#beta-test" class="nav-cta">🧪 Beta Testen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container-narrow">
+            <h1>Laten we praten</h1>
+            <p class="page-subtitle">Vragen, feedback of gewoon hallo zeggen? We horen graag van je.</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Voor alle vragen en opmerkingen</p>
+                    <a href="mailto:stijn.wouters@hotmail.com" class="contact-link">stijn.wouters@hotmail.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🧪</div>
+                    <h3>Beta Testing</h3>
+                    <p>Word beta-tester en help ons</p>
+                    <a href="index.html#beta-test" class="contact-link">Meld je aan →</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Feedback</h3>
+                    <p>Vertel ons wat beter kan</p>
+                    <a href="#contact-form" class="contact-link">Stuur feedback →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container-narrow">
+            <div class="form-header">
+                <h2>Stuur ons een bericht</h2>
+                <p>We proberen binnen 48 uur te reageren.</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Naam *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            placeholder="Je naam"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="je@email.com"
+                        >
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Onderwerp *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Kies een onderwerp</option>
+                        <option value="Algemene vraag">Algemene vraag</option>
+                        <option value="Beta testing">Beta testing</option>
+                        <option value="Bug report">Bug report</option>
+                        <option value="Feature request">Feature verzoek</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Andere">Andere</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Bericht *</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="6" 
+                        required 
+                        placeholder="Vertel ons wat je op je hart hebt..."
+                    ></textarea>
+                    <div class="char-counter">
+                        <span id="charCount">0</span> / 1000 karakters
+                    </div>
+                </div>
+                
+                <div class="form-consent">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="privacy" required>
+                        <span>Ik ga akkoord met de <a href="privacy.html" target="_blank">privacy policy</a></span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                    <span class="btn-text">Verstuur bericht</span>
+                    <span class="btn-loading">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+                            <path d="M10 2a8 8 0 0 1 8 8" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                                <animateTransform attributeName="transform" type="rotate" from="0 10 10" to="360 10 10" dur="1s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+                        Verzenden...
+                    </span>
+                </button>
+            </form>
+            
+            <div id="formFeedback" class="form-feedback"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="faq-preview">
+        <div class="container">
+            <h2>Veelgestelde vragen</h2>
+            <p class="section-subtitle">Misschien staat je antwoord er al tussen.</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Wanneer komt de app beschikbaar?</h3>
+                    <p>We zijn nu in beta-fase. Je kunt je aanmelden als beta-tester en direct beginnen met testen.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Kost de app echt maar €3?</h3>
+                    <p>Ja! Eenmalige betaling van €3. Geen abonnementen, geen premium tiers, geen verborgen kosten.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Werkt de app op Android?</h3>
+                    <p>Momenteel focussen we op iOS. Android-versie komt later dit jaar.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Hoe werkt de beta?</h3>
+                    <p>Je krijgt gratis toegang via TestFlight. Je gebruikt de app en geeft feedback. Simpel!</p>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <a href="faq.html" class="btn btn-secondary">Bekijk alle FAQ's</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="50" height="50" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="120" height="120" rx="25" fill="#f1c40f"/>
+                            <circle cx="60" cy="60" r="35" stroke="#4a4a4a" stroke-width="4" fill="none"/>
+                            <line x1="60" y1="60" x2="60" y2="35" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="60" y1="60" x2="75" y2="60" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Op Tijd.</h3>
+                    </div>
+                    <p>Structuur zonder rigiditeit.<br>Rust zonder druk.</p>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4>Navigatie</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Over Ons</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Prijzen</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#beta-test">Beta Testing</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:stijn.wouters@hotmail.com">Email</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Op Tijd. Gemaakt met ❤️ voor mensen die structuur zoeken zonder druk.</p>
+                <div class="footer-badges">
+                    <span class="badge">Made in Belgium 🇧🇪</span>
+                    <span class="badge">ADHD-friendly 🧠</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

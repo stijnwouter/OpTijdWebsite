@@ -1,0 +1,66 @@
+═══════════════════════════════════════════════════════════════
+  FORMSPREE SETUP - QUICK REFERENCE
+  Voor automatische emails naar: stijn.wouters@hotmail.com
+═══════════════════════════════════════════════════════════════
+
+📧 STAP 1: Maak FormSpree Account
+──────────────────────────────────
+1. Ga naar: https://formspree.io
+2. Klik "Sign Up" (gratis)
+3. Bevestig je email
+
+📝 STAP 2: Maak Nieuw Formulier
+──────────────────────────────────
+1. Klik "New Form"
+2. Vul in:
+   Name: Op Tijd Contact Form
+   Email: stijn.wouters@hotmail.com
+3. Klik "Create Form"
+
+🔑 STAP 3: Kopieer Form ID
+──────────────────────────────────
+Je krijgt een ID zoals: xpzbkjlm
+(Dit is uniek voor jouw formulier)
+
+🛠️ STAP 4: Update 2 Bestanden
+──────────────────────────────────
+
+A) In contact.html (regel 93):
+   Zoek:  action="https://formspree.io/f/YOUR_FORM_ID"
+   Vervang YOUR_FORM_ID met jouw ID
+   
+   Voorbeeld:
+   action="https://formspree.io/f/xpzbkjlm"
+
+B) In script.js (regel 111):
+   Zoek:  fetch('https://formspree.io/f/YOUR_FORM_ID'
+   Vervang YOUR_FORM_ID met jouw ID
+   
+   Voorbeeld:
+   fetch('https://formspree.io/f/xpzbkjlm'
+
+✅ STAP 5: Upload & Test
+──────────────────────────────────
+1. Upload beide bestanden naar je server
+2. Ga naar je website
+3. Vul het contactformulier in
+4. Check stijn.wouters@hotmail.com
+
+📧 Wat gebeurt er?
+──────────────────────────────────
+Wanneer iemand het formulier invult:
+→ FormSpree ontvangt de data
+→ FormSpree stuurt automatisch email naar jou
+→ Je krijgt alle ingevulde velden per email
+
+💰 Kosten?
+──────────────────────────────────
+Gratis plan: 50 submissions/maand
+(meer dan genoeg voor begin)
+
+❓ Hulp Nodig?
+──────────────────────────────────
+FormSpree documentatie: https://help.formspree.io
+Email: stijn.wouters@hotmail.com
+
+═══════════════════════════════════════════════════════════════
